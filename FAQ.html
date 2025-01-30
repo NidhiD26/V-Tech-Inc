@@ -41,7 +41,6 @@
 							<ul>
 								<li><a href="mailto:v.technologies.mlr@gmail.com"><i
 											class="fa fa-envelope-o"></i>v.technologies.mlr@gmail.com</a></li>
-								<!--	  <li><a href="#"><i class="fa fa-map-marker"></i>24/5, 1st Floor, Kurigram</a></li> -->
 								<li><a href="#"><i class="fa fa-phone"></i>9448141259</a></li>
 							</ul>
 						</div>
@@ -51,9 +50,7 @@
 					<div class="header_top_menu_icon">
 						<div class="header_top_menu_icon_inner">
 							<ul>
-								<!-- <li><a href="V Technologies Inc-blog.html">Blog</a></li>-->
-								<li><a href="contact-us.html">Contact
-										Us</a></li>
+								<li><a href="contact-us.html">Contact Us</a></li>
 							</ul>
 						</div>
 					</div>
@@ -103,54 +100,67 @@
 	<!----- Start V Technologies IncAbout Area ----->
 	<!--==================================================-->
 
-
-	<div class="about_area pt-20 pb-100">
+	<div class="faq-section">
 		<div class="container">
-			<div class="row">
-
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text_left">
-
-					<div class="section_main_title">
-						<h1>FAQ</h1>
-						<!--<h1>Provide Best <span>Service.</span></h1>-->
-					</div>
-					<div class="em_bar">
-						<div class="em_bar_bg"></div>
-					</div>
-				</div>
-
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
-
-					<p>&nbsp;</p>
-
-					<p>This section will be updated shortly.</p>
-				</div>
-
-
+			<div class="faq-title">
+				<h2>Frequently Asked Questions</h2>
 			</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+			<div class="faq-content">
+				<div class="faq-item">
+					<h3 class="faq-question">1. What services does V Technologies Inc offer?</h3>
+					<p class="faq-answer">
+						V Technologies Inc offers a wide range of services including contract research, manufacturing,
+						and analytical services for various industries.
+					</p>
+				</div>
+				<div class="faq-item">
+					<h3 class="faq-question">2. How can I contact V Technologies Inc?</h3>
+					<p class="faq-answer">
+						You can contact us via email at v.technologies.mlr@gmail.com or call us at 9448141259.
+					</p>
+				</div>
+				<div class="faq-item">
+					<h3 class="faq-question">3. What products do you offer?</h3>
+					<p class="faq-answer">
+						We offer a comprehensive range of laboratory products including analytical instruments,
+						laboratory consumables, and lab equipment.
+					</p>
+				</div>
+				<div class="faq-item">
+					<h3 class="faq-question">4. Do you provide custom solutions?</h3>
+					<p class="faq-answer">
+						Yes, we provide custom solutions tailored to meet the specific needs of our clients.
+					</p>
+				</div>
+				<div class="faq-item">
+					<h3 class="faq-question">5. How can I place an order?</h3>
+					<p class="faq-answer">
+						You can place an order by contacting us directly via email or phone. Our team will assist you
+						with the ordering process.
+					</p>
+				</div>
+				<div class="faq-item">
+					<h3 class="faq-question">6. Where is V Technologies Inc located?</h3>
+					<p class="faq-answer">
+						Our office is located at No. 201, String Estate, 8 Siddeshwara Apartment, Siddeshwara Layout,
+						Bangalore 560073, India.
+					</p>
+				</div>
+				<div class="faq-item">
+					<h3 class="faq-question">7. What are your business hours?</h3>
+					<p class="faq-answer">
+						Our business hours are Monday to Friday, 9:00 AM to 6:00 PM IST.
+					</p>
+				</div>
+				<div class="faq-item">
+					<h3 class="faq-question">8. Do you offer international shipping?</h3>
+					<p class="faq-answer">
+						Yes, we offer international shipping for our products. Please contact us for more details.
+					</p>
+				</div>
+			</div>
 		</div>
-
 	</div>
-
-	</div>
-	</div>
-	</div>
-
-
 
 	<!--==================================================-->
 	<!----- Start V Technologies IncFooter Middle Area ----->
@@ -193,7 +203,7 @@
 						<h4 class="widget-title pb-3">Contact Us</h4>
 						<div class="text-white">
 							<p>
-								V technologies INC Pvt. Ltd.<br>
+								V Technologies Inc Pvt. Ltd.<br>
 								No. 201, String Estate,<br>
 								8 Siddeshwara Apartment,<br>
 								Siddeshwara Layout,<br>
@@ -225,7 +235,7 @@
 				<div class="col-lg-6 col-md-6">
 					<div class="footer-bottom-content">
 						<div class="footer-bottom-content-copy">
-							<p class="text-white">&copy; <span id="current-year"></span> V technologies Inc. All Rights
+							<p class="text-white">&copy; <span id="current-year"></span> V Technologies Inc. All Rights
 								Reserved.</p>
 						</div>
 					</div>
@@ -248,6 +258,16 @@
 	<!--==================================================-->
 	<!----- End	V Technologies IncFooter Middle Area ----->
 	<!--==================================================-->
+	<script>
+		document.getElementById('current-year').textContent = new Date().getFullYear();
+		
+		document.querySelectorAll('.faq-question').forEach(item => {
+		item.addEventListener('click', event => {
+		const answer = event.target.nextElementSibling;
+		answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+		});
+		});
+	</script>
 	<script type="text/javascript" src="assets/js/vendor/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
@@ -262,7 +282,6 @@
 	<script type="text/javascript" src="venobox/venobox.min.js"></script>
 	<script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.nivo.slider.pack.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.meanmenu.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.meanmenu.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.scrollUp.js"></script>
 	<script type="text/javascript" src="assets/js/theme.js"></script>
