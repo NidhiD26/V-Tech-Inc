@@ -5050,7 +5050,7 @@ a.em-active-button:hover {
 
 .pricing_head_style2 {
     padding: 12px 0 21px;
-    background: #30D5C8;
+    background: #005b5c;
 }
 
 .pricing_title_style2 h3 {
@@ -5096,7 +5096,7 @@ a.em-active-button:hover {
 
 .order_style2_now a {
     background: #f5f5f5;
-    color: #30D5C8;
+    color: #005b5c;
     padding: 18px 55px;
     font-size: 18px;
     font-weight: 500;
@@ -5109,7 +5109,7 @@ a.em-active-button:hover {
 }
 
 .active .order_style2_now a {
-    background: #30D5C8;
+    background: #005b5c;
     color: #fff;
 }
 
@@ -5120,7 +5120,7 @@ a.em-active-button:hover {
     height: 100%;
     left: -25%;
     width: 0%;
-    background: #30D5C8;
+    background: #005b5c;
     transform: skew(50deg);
     transition-duration: .6s;
     z-index: -1;
