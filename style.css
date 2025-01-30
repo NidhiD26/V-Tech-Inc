@@ -39,106 +39,6 @@
     background-color: #0056b3;
     color: #fff;
 }
-/* Footer Styles */
-.footer-middle {
-    background-color: #333;
-    color: #fff;
-    padding: 50px 0;
-    width: 100%;
-}
-
-.footer-middle .widget {
-    flex: 1;
-    margin: 0 15px;
-}
-
-.footer-middle .widget-title {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: #fff;
-}
-
-.footer-middle .widget-nav-menu ul {
-    padding: 0;
-    list-style: none;
-}
-
-.footer-middle .widget-nav-menu ul li {
-    margin-bottom: 10px;
-}
-
-.footer-middle .widget-nav-menu ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer-middle .widget-nav-menu ul li a:hover {
-    text-decoration: underline;
-}
-
-.footer-middle .text-white {
-    color: #fff;
-}
-
-.footer-middle .text-white a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer-middle .text-white a:hover {
-    text-decoration: underline;
-}
-
-.footer-bottom {
-    border-top: 1px solid #444;
-    padding-top: 20px;
-    margin-top: 20px;
-}
-
-.footer-bottom .footer-bottom-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-bottom .footer-bottom-content p {
-    margin: 0;
-}
-
-.footer-bottom .footer-bottom-right {
-    text-align: right;
-}
-
-.footer-bottom .footer-bottom-right p {
-    margin: 0;
-}
-
-@media (max-width: 768px) {
-    .footer-bottom .footer-bottom-content {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-bottom .footer-bottom-right {
-        text-align: center;
-        margin-top: 10px;
-    }
-}
-
-/* Footer Columns Flexbox */
-.footer-middle .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.footer-middle .col-lg-3,
-.footer-middle .col-md-6,
-.footer-middle .col-sm-12 {
-    flex: 1;
-    min-width: 200px;
-    margin-bottom: 20px;
-}
 
 /*============================
  techno	Main Menu Area Css
@@ -7019,7 +6919,7 @@ a.em-active-button:hover {
     background-position: center center;
     background-size: cover;
     background: #111a3a;*/
-    background: url(assets/images/V Technologies Incbackground.png);
+    background: url(assets/images/footer.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
