@@ -101,6 +101,46 @@
     margin-top: 15px;
 }
 
+.faq-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.faq-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-title h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.faq-question {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none;
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.faq-question:hover {
+    text-decoration: underline;
+}
+
 /*============================
  techno	Main Menu Area Css
 ==============================*/
