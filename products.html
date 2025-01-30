@@ -99,88 +99,86 @@
 	</div>
 	<!----- End Navbar ----->
 
-	<!-- ============================================================== -->
-	<!-- Start V Technologies IncBreatcome Area -->
-	<!-- ============================================================== -->
-	<div class="breatcome_area d-flex align-items-center"
-		style="background: linear-gradient(rgba(29, 200, 205, 0.65), rgba(29, 205, 89, 0.2)),url(assets/images/slider/team.jpg);   background-repeat:no-repeat; background-size:cover;  background-position:center center;  height:350px;  position:relative;">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="breatcome_title">
-						<div class="breatcome_title_inner pb-2">
-							<h2>New Launches</h2>
-						</div>
-						<div class="breatcome_content">
-							<ul>
-								<li><a href="index.html">Home</a> <i class="fa fa-angle-right"></i> <a
-										href="#">Products</a> <i class="fa fa-angle-right"></i> <span>New
-										Launches</span></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+<div class="container">
+	<h1>Product Titles</h1>
+	<ul id="product-list" style="padding: 20px;">
+		<li><a href="#" class="product-link" data-id="1">Product 1</a></li>
+		<li><a href="#" class="product-link" data-id="2">Product 2</a></li>
+		<li><a href="#" class="product-link" data-id="3">Product 3</a></li>
+		<li><a href="#" class="product-link" data-id="4">Product 4</a></li>
+		<li><a href="#" class="product-link" data-id="5">Product 5</a></li>
+	</ul>
+</div>
+
+<!-- The Modal -->
+<div id="productModal" class="modal">
+	<div class="modal-content">
+		<span class="close">&times;</span>
+		<h2 id="product-title"></h2>
+		<img id="product-image" src="" alt="Product Image" style="width:100%">
+		<p id="product-description"></p>
 	</div>
-	<!-- ============================================================== -->
-	<!-- End	V Technologies IncBreatcome Area -->
-	<!-- ============================================================== -->
+</div>
 
-	<!--==================================================-->
-	<!----- Start V Technologies IncAbout Area ----->
-	<!--==================================================-->
-	<div class="about_area pt-30 pb-100">
-		<div class="container">
-			<div class="row">
+<script>
+	const products = [
+		{
+			id: 1,
+			title: "Product 1",
+			image: "/awards/award-3.png",
+			description: "Description of Product 1"
+		},
+		{
+			id: 2,
+			title: "Product 2",
+			image: "assets/images/product2.jpg",
+			description: "Description of Product 2"
+		},
+		{
+			id: 3,
+			title: "Product 3",
+			image: "assets/images/product3.jpg",
+			description: "Description of Product 3"
+		},
+		{
+			id: 4,
+			title: "Product 4",
+			image: "assets/images/product4.jpg",
+			description: "Description of Product 4"
+		},
+		{
+			id: 5,
+			title: "Product 5",
+			image: "assets/images/product5.jpg",
+			description: "Description of Product 5"
+		}
+	];
 
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div class="section_title text_left mb-0 mt-3">
-						<!--<div class="section_sub_title uppercase mb-3">
-							<h6>16 YEARS OF EXPERIENCE</h6>
-						</div>-->
-						<div class="section_main_title">
-							<h1>New Launches</h1>
-							<!--<h1>Provide Best <span>Service.</span></h1>-->
-						</div>
-						<div class="em_bar">
-							<div class="em_bar_bg"></div>
-						</div>
-						<div class="col-lg-12 col-sm-12 mt-50">
-							<div class="single_service">
-								<div class="single_service_inner">
-									<div class="single_service_icon">
-										<i class="fa fa-forward"></i>
-									</div>
-									<div class="single_service_content">
-										<h4>Bacteriophage Product Development is currently underway for Containing
-											Aeromonas affecting Fisheries.</h4>
-									</div>
-								</div>
-							</div>
-							<div class="single_service">
-								<div class="single_service_inner">
-									<div class="single_service_icon">
-										<i class="fa fa-forward"></i>
-									</div>
-									<div class="single_service_content">
-										<h4>Bacteriophage Products for treatment of infections in Livestock.</h4>
-									</div>
-								</div>
-							</div>
+	const modal = document.getElementById("productModal");
+	const span = document.getElementsByClassName("close")[0];
 
-						</div>
+	document.querySelectorAll('.product-link').forEach(item => {
+		item.addEventListener('click', event => {
+			event.preventDefault();
+			const productId = event.target.getAttribute('data-id');
+			const product = products.find(p => p.id == productId);
+			document.getElementById('product-title').innerText = product.title;
+			document.getElementById('product-image').src = product.image;
+			document.getElementById('product-description').innerText = product.description;
+			modal.style.display = "block";
+		});
+	});
 
-					</div>
+	span.onclick = function () {
+		modal.style.display = "none";
+	}
 
-				</div>
-
-			</div>
-		</div>
-	</div>
-	<!--==================================================-->
-	<!----- End	V Technologies IncAbout Area ----->
-	<!--==================================================-->
+	window.onclick = function (event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+</script>
 
 
 
