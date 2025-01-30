@@ -6910,6 +6910,41 @@ a.em-active-button:hover {
     color: #fff;
 }
 
+/* Base styling for collapsed state */
+.panel-collapse {
+    display: none;
+}
+
+/* Styling for expanded state */
+.panel-collapse.show {
+    display: block;
+}
+
+/* Optional transition effects */
+.panel-collapse {
+    transition: height 0.35s ease;
+}
+
+/* Panel styling */
+.bg_color2 {
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+/* Active state styling for the panel header */
+.panel-title a[aria-expanded="true"] {
+    color: #007bff;
+}
+
+/* Collapse icon transition */
+.panel-title a i {
+    transition: transform 0.3s ease;
+}
+
+.panel-title a[aria-expanded="true"] i {
+    transform: rotate(90deg);
+}
+
 /*====================================================
 --<	Techno Footer Middle Area Css -->
 ======================================================*/
