@@ -22,7 +22,7 @@ This repository contains the code for our official website, designed with a mode
 Below is the detailed directory structure of the **V Technologies Inc.** project:
 
 ```plaintext
-└── /
+└── /V-Technologies-Inc
     ├── README.md                     # Project description and documentation
     ├── FAQ.html                       # Frequently Asked Questions page
     ├── blogs.html                     # Blog section for articles and news
@@ -55,12 +55,12 @@ To set up this project locally, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/NidhiD26/V-Tech-Inc.git
+    git clone https://github.com/NidhiD26/V-Technologies-Inc.git
     ```
 
 2. Navigate to the project directory:
     ```bash
-    cd V-Tech-Tnc
+    cd V-Technologies-Inc
     ```
 
 3. Open the `index.html` in your preferred browser:
