@@ -39,105 +39,106 @@
     background-color: #0056b3;
     color: #fff;
 }
-/* Footer Styles */
-.footer-middle {
-    background-color: #333;
-    color: #fff;
-    padding: 50px 0;
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
     width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
 }
 
-.footer-middle .widget {
-    flex: 1;
-    margin: 0 15px;
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    animation: fadeIn 0.3s ease-in-out;
 }
 
-.footer-middle .widget-title {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: #fff;
-}
-
-.footer-middle .widget-nav-menu ul {
-    padding: 0;
-    list-style: none;
-}
-
-.footer-middle .widget-nav-menu ul li {
-    margin-bottom: 10px;
-}
-
-.footer-middle .widget-nav-menu ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer-middle .widget-nav-menu ul li a:hover {
-    text-decoration: underline;
-}
-
-.footer-middle .text-white {
-    color: #fff;
-}
-
-.footer-middle .text-white a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer-middle .text-white a:hover {
-    text-decoration: underline;
-}
-
-.footer-bottom {
-    border-top: 1px solid #444;
-    padding-top: 20px;
-    margin-top: 20px;
-}
-
-.footer-bottom .footer-bottom-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.footer-bottom .footer-bottom-content p {
-    margin: 0;
-}
-
-.footer-bottom .footer-bottom-right {
-    text-align: right;
-}
-
-.footer-bottom .footer-bottom-right p {
-    margin: 0;
-}
-
-@media (max-width: 768px) {
-    .footer-bottom .footer-bottom-content {
-        flex-direction: column;
-        text-align: center;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
     }
 
-    .footer-bottom .footer-bottom-right {
-        text-align: center;
-        margin-top: 10px;
+    to {
+        opacity: 1;
+        transform: scale(1);
     }
 }
 
-/* Footer Columns Flexbox */
-.footer-middle .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
-.footer-middle .col-lg-3,
-.footer-middle .col-md-6,
-.footer-middle .col-sm-12 {
-    flex: 1;
-    min-width: 200px;
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#product-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#product-description {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.faq-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.faq-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-title h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.faq-item {
     margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.faq-question {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none;
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.faq-question:hover {
+    text-decoration: underline;
 }
 
 /*============================
@@ -5089,7 +5090,7 @@ a.em-active-button:hover {
 
 .pricing_head_style2 {
     padding: 12px 0 21px;
-    background: #0762f8;
+    background: #005b5c;
 }
 
 .pricing_title_style2 h3 {
@@ -5135,7 +5136,7 @@ a.em-active-button:hover {
 
 .order_style2_now a {
     background: #f5f5f5;
-    color: #0762f8;
+    color: #005b5c;
     padding: 18px 55px;
     font-size: 18px;
     font-weight: 500;
@@ -5148,7 +5149,7 @@ a.em-active-button:hover {
 }
 
 .active .order_style2_now a {
-    background: #0762f8;
+    background: #005b5c;
     color: #fff;
 }
 
@@ -5159,7 +5160,7 @@ a.em-active-button:hover {
     height: 100%;
     left: -25%;
     width: 0%;
-    background: #0762f8;
+    background: #005b5c;
     transform: skew(50deg);
     transition-duration: .6s;
     z-index: -1;
@@ -7010,6 +7011,41 @@ a.em-active-button:hover {
     color: #fff;
 }
 
+/* Base styling for collapsed state */
+.panel-collapse {
+    display: none;
+}
+
+/* Styling for expanded state */
+.panel-collapse.show {
+    display: block;
+}
+
+/* Optional transition effects */
+.panel-collapse {
+    transition: height 0.35s ease;
+}
+
+/* Panel styling */
+.bg_color2 {
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+/* Active state styling for the panel header */
+.panel-title a[aria-expanded="true"] {
+    color: #007bff;
+}
+
+/* Collapse icon transition */
+.panel-title a i {
+    transition: transform 0.3s ease;
+}
+
+.panel-title a[aria-expanded="true"] i {
+    transform: rotate(90deg);
+}
+
 /*====================================================
 --<	Techno Footer Middle Area Css -->
 ======================================================*/
@@ -7019,7 +7055,7 @@ a.em-active-button:hover {
     background-position: center center;
     background-size: cover;
     background: #111a3a;*/
-    background: url(assets/images/V Technologies Incbackground.png);
+    background: url(assets/images/footer.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
